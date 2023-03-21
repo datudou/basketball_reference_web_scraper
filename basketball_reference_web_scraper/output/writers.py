@@ -92,12 +92,14 @@ class JSONWriter(Writer):
                     data,
                     json_file,
                     cls=self.value_formatter,
+                    ensure_ascii=False,
                     **output_options,
                 )
 
         return json.dumps(
             data,
             cls=self.value_formatter,
+            ensure_ascii=False,
             **output_options,
         )
 
